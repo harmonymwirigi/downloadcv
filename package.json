@@ -1,0 +1,18 @@
+{
+  "name": "cv-automation",
+  "version": "1.0.0",
+  "description": "CV download and upload automation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^21.6.1",
+    "axios": "^1.6.2",
+    "form-data": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
