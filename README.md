@@ -17,16 +17,17 @@ Automatischer Service zum Herunterladen von CVs und Upload zu Airtable.
 1. Gehe zu [railway.app](https://railway.app)
 2. Klicke auf "New Project"
 3. Wähle "Deploy from GitHub repo"
-4. Wähle `emploiogmbh/cv-automation`
+4. Wähle `harmonymwirigi/downloadcv`
 
 ### 2. Environment Variables setzen
 
-In Railway Dashboard → Variables:
+In Railway Dashboard → Variables (optional, NODE_ENV is already set in Dockerfile):
 
 ```env
 NODE_ENV=production
-PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
 ```
+
+**Note:** Puppeteer will automatically use its bundled Chromium. No need to set `PUPPETEER_EXECUTABLE_PATH` unless you want to use a system Chrome installation.
 
 ### 3. Deploy starten
 
